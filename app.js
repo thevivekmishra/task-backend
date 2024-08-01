@@ -11,13 +11,13 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Middleware
-app.use(cors({
-    origin: 'http://localhost:5173', // Update with your frontend URL
-    methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'id']
-}));
+// app.use(cors({
+//     origin: 'http://localhost:5173', // Update with your frontend URL
+//     methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE', 'OPTIONS'],
+//     allowedHeaders: ['Content-Type', 'Authorization', 'id']
+// }));
 
-// app.use(cors())
+app.use(cors())
 app.use(express.json());
 
 // Routes
